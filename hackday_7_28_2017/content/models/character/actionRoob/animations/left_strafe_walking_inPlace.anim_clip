@@ -1,0 +1,56 @@
+
+_data_root_version = 3
+_id = "ced986eb-8694-4a22-975f-bd14dcbfe001"
+_name = "content/models/character/actionRoob/animations/left_strafe_walking_inPlace"
+additive_offset_computation_mode = "First Frame"
+anim_skeleton_ref = {
+	_id = "95740ee8-bd38-4fac-90fd-455bb83aa144"
+	ref_filename = "content/models/character/actionRoob/actionRoobStingrayScale.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "df9896bc-f573-4e76-ab12-a78f2e6c9407"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+base_offset_preview_animation_clip_ref = {
+	_id = "d0d41250-3155-4c49-83c9-ac588709982c"
+	ref_filename = null
+	ref_id = null
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "91938d1a-0737-4c84-b4f3-f60ab05b1a80"
+	ref_filename = "content/models/character/actionRoob/animations/left_strafe_walking_inPlace.dcc_asset"
+	ref_id = null
+}
+flow_events = [
+]
+global_compression_settings = {
+	_id = "fa627b68-0248-4937-9dba-e7efbb32f938"
+	do_ignore_positions = false
+	do_ignore_rotations = false
+	do_ignore_scales = false
+	do_pack_positions = true
+	do_pack_rotations = true
+	do_pack_scales = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+	scale_tolerance = 0.001
+}
+import_blend_shape_channel_curves = true
+import_extra_curves = true
+import_transform_curves = true
+offset_animation = false
+offset_pose_animation_clip_ref = {
+	_id = "b81854b7-1548-4d68-a84d-2671c55dfb86"
+	ref_filename = null
+	ref_id = null
+}
+take_name = "mixamo_com"
+trimming_end = 1.03333330154419
+trimming_start = 0

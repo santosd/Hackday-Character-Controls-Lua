@@ -1,0 +1,56 @@
+
+_data_root_version = 3
+_id = "ff0e3fd2-d319-42cc-beeb-35810c7e72ca"
+_name = "content/models/character/actionRoob/animations/left_turn_90"
+additive_offset_computation_mode = "First Frame"
+anim_skeleton_ref = {
+	_id = "87d01f1d-50f6-4c2d-92dd-4779fed09de5"
+	ref_filename = "content/models/character/actionRoob/actionRoobStingrayScale.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "984a0e13-8518-48f4-a93e-2ad18528801f"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+base_offset_preview_animation_clip_ref = {
+	_id = "e041f2fd-dd2b-4b74-83bc-c920d8b4f2d4"
+	ref_filename = null
+	ref_id = null
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "2d7aa0ba-24f4-4e93-b02f-356dbcb8e998"
+	ref_filename = "content/models/character/actionRoob/animations/left_turn_90.dcc_asset"
+	ref_id = null
+}
+flow_events = [
+]
+global_compression_settings = {
+	_id = "9bf190f9-0df9-4a27-b3a7-cb152d004ffa"
+	do_ignore_positions = false
+	do_ignore_rotations = false
+	do_ignore_scales = false
+	do_pack_positions = true
+	do_pack_rotations = true
+	do_pack_scales = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+	scale_tolerance = 0.001
+}
+import_blend_shape_channel_curves = true
+import_extra_curves = true
+import_transform_curves = true
+offset_animation = false
+offset_pose_animation_clip_ref = {
+	_id = "b64f14b7-0e61-426c-b2ac-c7002f8d263c"
+	ref_filename = null
+	ref_id = null
+}
+take_name = "mixamo_com"
+trimming_end = 0.933333337306976
+trimming_start = 0

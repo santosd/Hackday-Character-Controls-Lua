@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "35ad3d43-ee18-46db-803d-8c9ea200947b"
+_name = "content/models/character/actionRoob/actionRoobStingrayScale"
+anim_controller_ref = {
+	_id = "0abfdb09-9310-4419-a412-f15f1c99a2b6"
+	ref_filename = "content/models/character/actionRoob/actionRoobStingrayScale.anim_controller"
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "4487fa9d-17cf-44df-a5a7-7c51fd116603"
+	ref_filename = "content/models/character/actionRoob/actionRoobStingrayScale.anim_skeleton"
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "a12c3b83-3564-411e-ad67-5af6d246ee64"
+	ref_filename = "content/models/character/actionRoob/actionRoobStingrayScale.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/character/actionRoob/actionRoobStingrayScale"
