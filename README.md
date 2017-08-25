@@ -3,7 +3,7 @@ This repo is created for a hackday project I am working on to learn some lua scr
 
 ## Friday August 11th 2017
  
-This was the initial start date of this project. I learned quite a few things
+This was the initial start date of this project. I learned quite a few things:
 
 * In a table it is you can use the table name with a dot to create variables that are related to it. For example:
     * The following is the name of my table:
@@ -44,3 +44,6 @@ This was the initial start date of this project. I learned quite a few things
     stingray.Unit.set_local_position(actionRoobControls.ar_camera,1,actionRoobControls.ar_char_pos_cam_offset:unbox())
     ```
 * Next step is to work on character movement and camera follow. There currently is no update on character movement because variables are not being reassigned so the same value is being kept.
+
+## Friday August 25th 2017
+
