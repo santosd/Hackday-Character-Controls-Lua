@@ -62,4 +62,6 @@ actionRoobControls.ar_cam_offset = stingray.Vector3(actionRoobControls.pos_x,act
 ```
 The following is a gif showing the controls at work:
 
-![Hackday controls gif](https://git.autodesk.com/santosd/Hackday-Character-Controls-Lua/blob/master/images/gifs/LUA_animControllerHackday01.gif)
+![alt text][logo]
+
+[logo]: https://github.com/santosd/Hackday-Character-Controls-Lua/blob/master/images/gifs/LUA_animControllerHackday01.gif "Logo Title Text 2"
