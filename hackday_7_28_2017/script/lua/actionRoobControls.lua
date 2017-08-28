@@ -33,25 +33,49 @@ function actionRoobControls.ar_controls()
     local sIsPressed = stingray.Keyboard.button(s_key_id)
     local d_key_id = stingray.Keyboard.button_id("d")
     local dIsPressed = stingray.Keyboard.button(d_key_id)
+    local shift_key_id = stingray.Keyboard.button_id("left shift")
+    local shiftIsPressed = stingray.Keyboard.button(shift_key_id)
 -- if button is pressed play specific animation event and update the position of the character
-    if wIsPressed == 1 then
+    -- walk
+    if wIsPressed == 1 and shiftIsPressed == 0  then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "walk")
         actionRoobControls.pos_y = actionRoobControls.pos_y + 0.05
-        stingray.Unit.set_local_position(actionRoobControls.ar_character,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
-    elseif aIsPressed == 1 then
+
+    -- run
+    elseif wIsPressed == 1 and shiftIsPressed == 1  then
+        stingray.Unit.animation_event(actionRoobControls.ar_character, "run")
+        actionRoobControls.pos_y = actionRoobControls.pos_y + 0.1
+
+    -- left strafe walk
+    elseif aIsPressed == 1 and shiftIsPressed == 0 then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "leftStrafeWalk")
         actionRoobControls.pos_x = actionRoobControls.pos_x - 0.05
-        stingray.Unit.set_local_position(actionRoobControls.ar_character,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
-    elseif dIsPressed == 1 then
+
+    -- left strafe run
+    elseif aIsPressed == 1 and shiftIsPressed == 1 then
+        stingray.Unit.animation_event(actionRoobControls.ar_character, "leftStrafeRun")
+        actionRoobControls.pos_x = actionRoobControls.pos_x - 0.1
+
+    -- right strafe walk
+    elseif dIsPressed == 1 and shiftIsPressed == 0 then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "rightStrafeWalk")
         actionRoobControls.pos_x = actionRoobControls.pos_x + 0.05
-        stingray.Unit.set_local_position(actionRoobControls.ar_character,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
-    elseif sIsPressed == 1 then
+        
+    -- right strafe run
+    elseif dIsPressed == 1 and shiftIsPressed == 1 then
+        stingray.Unit.animation_event(actionRoobControls.ar_character, "rightStrafeRun")
+        actionRoobControls.pos_x = actionRoobControls.pos_x + 0.1
+
+    -- backwards walk
+    elseif sIsPressed == 1 and shiftIsPressed == 0 then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "backwardsWalk")
         actionRoobControls.pos_y = actionRoobControls.pos_y - 0.05
-        stingray.Unit.set_local_position(actionRoobControls.ar_character,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
-    else stingray.Unit.animation_event(actionRoobControls.ar_character, "idle")
+    else 
+        stingray.Unit.animation_event(actionRoobControls.ar_character, "idle")
+        stingray.Unit.animation_get_state(actionRoobControls.ar_character)
+        -- stingray.Unit.animation_event(actionRoobControls.ar_character, "dance")
     end
     --update the position of the camera based on the location of the character.
+    stingray.Unit.set_local_position(actionRoobControls.ar_character,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
     stingray.Unit.set_local_position(actionRoobControls.ar_camera,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y -7,actionRoobControls.pos_z +6))
 end

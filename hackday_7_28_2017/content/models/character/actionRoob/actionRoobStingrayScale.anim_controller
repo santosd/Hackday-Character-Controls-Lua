@@ -17,11 +17,17 @@ compiler_data = {
 		}
 		backwardsWalk = {
 		}
+		dance = {
+		}
 		idle = {
 		}
 		jump = {
 		}
+		leftStrafeRun = {
+		}
 		leftStrafeWalk = {
+		}
+		rightStrafeRun = {
 		}
 		rightStrafeWalk = {
 		}
@@ -93,6 +99,22 @@ compiler_data = {
 							on_beat = ""
 							to = "backwardsWalk"
 						}
+						{
+							blend_time = 0.2
+							event = "leftStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "leftStrafeRun"
+						}
+						{
+							blend_time = 0.2
+							event = "rightStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "rightStrafeRun"
+						}
 					]
 					weights = [
 						"1.0"
@@ -157,6 +179,22 @@ compiler_data = {
 							on_beat = ""
 							to = "backwardsWalk"
 						}
+						{
+							blend_time = 0.2
+							event = "leftStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "leftStrafeRun"
+						}
+						{
+							blend_time = 0.2
+							event = "rightStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "rightStrafeRun"
+						}
 					]
 					weights = [
 						"1.0"
@@ -218,7 +256,7 @@ compiler_data = {
 					]
 					loop_animation = true
 					name = "idle"
-					randomization_type = "every_loop"
+					randomization_type = "on_entry"
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
@@ -270,6 +308,22 @@ compiler_data = {
 							mode = "direct"
 							on_beat = ""
 							to = "backwardsWalk"
+						}
+						{
+							blend_time = 0.2
+							event = "leftStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "leftStrafeRun"
+						}
+						{
+							blend_time = 0.2
+							event = "rightStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "rightStrafeRun"
 						}
 					]
 					weights = [
@@ -327,6 +381,22 @@ compiler_data = {
 							on_beat = ""
 							to = "backwardsWalk"
 						}
+						{
+							blend_time = 0.2
+							event = "leftStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "leftStrafeRun"
+						}
+						{
+							blend_time = 0.2
+							event = "rightStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "rightStrafeRun"
+						}
 					]
 					weights = [
 						"1.0"
@@ -383,6 +453,22 @@ compiler_data = {
 							on_beat = ""
 							to = "backwardsWalk"
 						}
+						{
+							blend_time = 0.2
+							event = "leftStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "leftStrafeRun"
+						}
+						{
+							blend_time = 0.2
+							event = "rightStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "rightStrafeRun"
+						}
 					]
 					weights = [
 						"1.0"
@@ -411,7 +497,7 @@ compiler_data = {
 							blend_time = 0.2
 							event = "run"
 							is_switch = false
-							mode = "direct"
+							mode = "wait"
 							on_beat = ""
 							to = "run"
 						}
@@ -446,6 +532,166 @@ compiler_data = {
 							mode = "direct"
 							on_beat = ""
 							to = "rightStrafeWalk"
+						}
+						{
+							blend_time = 0.2
+							event = "leftStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "leftStrafeRun"
+						}
+						{
+							blend_time = 0.2
+							event = "rightStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "rightStrafeRun"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/character/actionRoob/animations/left_strafe_inPlace"
+					]
+					loop_animation = true
+					name = "leftStrafeRun"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "leftStrafeWalk"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "leftStrafeWalk"
+						}
+						{
+							blend_time = 0.2
+							event = "backwardsWalk"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "backwardsWalk"
+						}
+						{
+							blend_time = 0.2
+							event = "run"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "run"
+						}
+						{
+							blend_time = 0.2
+							event = "idle"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "idle"
+						}
+						{
+							blend_time = 0.2
+							event = "walk"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "walk"
+						}
+						{
+							blend_time = 0.2
+							event = "rightStrafeWalk"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "rightStrafeWalk"
+						}
+						{
+							blend_time = 0.2
+							event = "rightStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "rightStrafeRun"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/character/actionRoob/animations/right_strafe_inPlace"
+					]
+					loop_animation = true
+					name = "rightStrafeRun"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "rightStrafeWalk"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "rightStrafeWalk"
+						}
+						{
+							blend_time = 0.2
+							event = "leftStrafeRun"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "leftStrafeRun"
+						}
+						{
+							blend_time = 0.2
+							event = "backwardsWalk"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "backwardsWalk"
+						}
+						{
+							blend_time = 0.2
+							event = "walk"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "walk"
+						}
+						{
+							blend_time = 0.2
+							event = "leftStrafeWalk"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "leftStrafeWalk"
+						}
+						{
+							blend_time = 0.2
+							event = "run"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "run"
+						}
+						{
+							blend_time = 0.2
+							event = "idle"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "idle"
 						}
 					]
 					weights = [
@@ -512,6 +758,18 @@ events = {
 		{
 			_id = "46ff1e63-8a6d-4065-8fbe-9b674bbeaede"
 			_name = "backwardsWalk"
+		}
+		{
+			_id = "a1ca07fe-3c23-4771-ae87-0d6d1e620a19"
+			_name = "leftStrafeRun"
+		}
+		{
+			_id = "62c98448-8a22-481b-ad2e-4aceda412627"
+			_name = "rightStrafeRun"
+		}
+		{
+			_id = "674d3875-a3b3-4608-8d48-49a0e84ebfac"
+			_name = "dance"
 		}
 	]
 	sub_folders = [
@@ -749,6 +1007,60 @@ layers = [
 							ref_id = "980fa767-6006-4cae-abd4-e4cfdce291d5"
 						}
 					}
+					{
+						_id = "6af7c472-69ef-46fa-b5fc-81e9ce32f1b2"
+						actual_target_ref = {
+							_id = "8ad175f7-ed6c-41bc-bded-d132329e04f6"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "27933ad6-d8d7-4b6d-820b-f7accb4b7676"
+							ref_filename = null
+							ref_id = "a1ca07fe-3c23-4771-ae87-0d6d1e620a19"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "ed10c496-bdd2-477d-8488-992327e19e4a"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "d0c5842c-8833-4829-932d-2c50be16e6f4"
+							ref_filename = null
+							ref_id = "95d3b58c-797f-482b-a851-d2e084290b4c"
+						}
+					}
+					{
+						_id = "f2dd57b9-314a-48a8-a649-104c393f51ab"
+						actual_target_ref = {
+							_id = "d7e33cca-9808-47ef-a924-ce2338fa721a"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "511fb766-fad0-47ac-9ecf-476d26969256"
+							ref_filename = null
+							ref_id = "62c98448-8a22-481b-ad2e-4aceda412627"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "c61e54bd-d3f8-4ed6-91b4-644be95363ba"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "c634b01a-f2ec-4a55-8b59-5e524a07c515"
+							ref_filename = null
+							ref_id = "8fc5f677-697d-4ada-9e04-d0b8b7380a11"
+						}
+					}
 				]
 				weights = [
 					"1.0"
@@ -960,6 +1272,60 @@ layers = [
 							ref_id = "980fa767-6006-4cae-abd4-e4cfdce291d5"
 						}
 					}
+					{
+						_id = "dca9ba2d-9f09-4634-9737-abbf25e79379"
+						actual_target_ref = {
+							_id = "04d52444-9f22-4565-86bd-58288c46e483"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "114c4ab9-7be3-4864-b839-977bf7bbe3a4"
+							ref_filename = null
+							ref_id = "a1ca07fe-3c23-4771-ae87-0d6d1e620a19"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "2d49f2ad-d33c-4473-9830-a5a6de4a2f0a"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "f1f81330-6c22-4667-bac2-2c221a869845"
+							ref_filename = null
+							ref_id = "95d3b58c-797f-482b-a851-d2e084290b4c"
+						}
+					}
+					{
+						_id = "e696e97d-60f6-48a4-ba27-24b2f7b4626a"
+						actual_target_ref = {
+							_id = "423ca143-2def-4694-8051-b56d7045298b"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "451e8c67-e94c-4e00-90d8-37fc2bcb438d"
+							ref_filename = null
+							ref_id = "62c98448-8a22-481b-ad2e-4aceda412627"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "aeb1eeb9-59df-440c-93db-a60c8b56da18"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "db1c7278-2f43-44ca-a197-7886775efbd4"
+							ref_filename = null
+							ref_id = "8fc5f677-697d-4ada-9e04-d0b8b7380a11"
+						}
+					}
 				]
 				weights = [
 					"1.0"
@@ -1158,7 +1524,7 @@ layers = [
 				muted_layers = [
 				]
 				offset_state = false
-				randomization_type = "every_loop"
+				randomization_type = "on_entry"
 				root_driving = "ignore"
 				speed = "1"
 				transition_switch_entries = [
@@ -1328,13 +1694,67 @@ layers = [
 							ref_id = "980fa767-6006-4cae-abd4-e4cfdce291d5"
 						}
 					}
+					{
+						_id = "fe7c4983-17a5-441b-8051-aeef7d4bc10a"
+						actual_target_ref = {
+							_id = "69424d9a-2317-4fab-a4dc-e1943d2f08b6"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "89b719e9-5fb3-429e-a133-98523f23b612"
+							ref_filename = null
+							ref_id = "a1ca07fe-3c23-4771-ae87-0d6d1e620a19"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "f0cc170c-5982-4753-9432-2b722c1b11c1"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "3528d5f3-ac88-49a5-a030-ce8f7f1d1fa1"
+							ref_filename = null
+							ref_id = "95d3b58c-797f-482b-a851-d2e084290b4c"
+						}
+					}
+					{
+						_id = "6b29dcb9-a217-4534-890a-e953e70a4701"
+						actual_target_ref = {
+							_id = "0e3812c8-3345-44c2-b9ab-ee384ba2e4df"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "bb97b736-8b15-46a5-9dd2-6f031dbf0a2e"
+							ref_filename = null
+							ref_id = "62c98448-8a22-481b-ad2e-4aceda412627"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "20d2521b-50f5-4fed-b9dd-e68758fd8d12"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "796c34a8-fdd6-40d3-b780-29c598b69c72"
+							ref_filename = null
+							ref_id = "8fc5f677-697d-4ada-9e04-d0b8b7380a11"
+						}
+					}
 				]
 				weights = [
 					"1.0"
 				]
 				width = 150
-				x = 140
-				y = -120
+				x = 20
+				y = -100
 			}
 			{
 				_id = "59b57414-b825-4926-a525-65c0243ac7f8"
@@ -1510,6 +1930,60 @@ layers = [
 							_id = "f4398d66-b223-47b2-8268-e16ecf1d4137"
 							ref_filename = null
 							ref_id = "980fa767-6006-4cae-abd4-e4cfdce291d5"
+						}
+					}
+					{
+						_id = "f627fbf9-f7e8-4abd-9857-795f83d1a0c8"
+						actual_target_ref = {
+							_id = "5c02ed25-687a-4585-a561-883abe585b2e"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "acbc4df3-84b9-4c5e-b1b9-ba590f6237ab"
+							ref_filename = null
+							ref_id = "a1ca07fe-3c23-4771-ae87-0d6d1e620a19"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "ea29ab97-fc58-4cbb-afe0-2074b5e8950a"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "ef6316db-e6e1-4f73-8863-b27f66ff682c"
+							ref_filename = null
+							ref_id = "95d3b58c-797f-482b-a851-d2e084290b4c"
+						}
+					}
+					{
+						_id = "c1075c98-2850-402a-8874-4d3c8239738d"
+						actual_target_ref = {
+							_id = "983b50a9-edf3-440c-8ae5-b3946ee449e8"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "39032d0e-e379-4e50-81e3-cdfce489e8c3"
+							ref_filename = null
+							ref_id = "62c98448-8a22-481b-ad2e-4aceda412627"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "8286697d-91a7-4360-8a82-106a062579b8"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "317eed08-08a4-4c7b-b99f-aa307981f496"
+							ref_filename = null
+							ref_id = "8fc5f677-697d-4ada-9e04-d0b8b7380a11"
 						}
 					}
 				]
@@ -1696,6 +2170,60 @@ layers = [
 							ref_id = "980fa767-6006-4cae-abd4-e4cfdce291d5"
 						}
 					}
+					{
+						_id = "f12e92ed-73dc-4251-8c3d-e1a81b58b8b3"
+						actual_target_ref = {
+							_id = "1ca233a3-1a9a-44ca-80b3-411b794a4af3"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "543121aa-997b-4fd5-b56e-e011b408bea8"
+							ref_filename = null
+							ref_id = "a1ca07fe-3c23-4771-ae87-0d6d1e620a19"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "63a042ea-cac8-4eb2-9986-650f86859041"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "5d29d58d-f8ba-4b7d-aa4b-e66858d70928"
+							ref_filename = null
+							ref_id = "95d3b58c-797f-482b-a851-d2e084290b4c"
+						}
+					}
+					{
+						_id = "c3c59e59-51e5-428f-9054-90c952734261"
+						actual_target_ref = {
+							_id = "1d586561-f35f-40c9-b2a1-f3b7760bed63"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "a9814699-267d-4c06-966c-03213dccfcdd"
+							ref_filename = null
+							ref_id = "62c98448-8a22-481b-ad2e-4aceda412627"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "571e9fdc-9709-4942-84ae-03acbabc18e3"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "d5b25402-65da-402d-ae83-62b1447e7639"
+							ref_filename = null
+							ref_id = "8fc5f677-697d-4ada-9e04-d0b8b7380a11"
+						}
+					}
 				]
 				weights = [
 					"1.0"
@@ -1786,7 +2314,7 @@ layers = [
 							ref_id = "7c271be9-1a96-48a1-ace6-f14eb148d1a1"
 						}
 						has_nested_from = false
-						mode = "direct"
+						mode = "wait"
 						nested_from_ref = {
 							_id = "08dadffa-3d38-4efd-adc7-ecc208f80374"
 							ref_filename = null
@@ -1907,6 +2435,60 @@ layers = [
 							ref_id = "e66b8875-c9f5-4727-88f6-482fb06fd96f"
 						}
 					}
+					{
+						_id = "ee41003c-7170-4a9f-b112-5d66afc0a39e"
+						actual_target_ref = {
+							_id = "7874b5c3-4692-41ec-95a7-784be03bc614"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "4e65691b-c1e6-40bb-8fd1-6859de47784d"
+							ref_filename = null
+							ref_id = "a1ca07fe-3c23-4771-ae87-0d6d1e620a19"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "1cd7c0f2-0a53-4659-b50a-4bc33682656a"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "1aa3ee8f-ccc3-45bb-bc34-9d0085ceed54"
+							ref_filename = null
+							ref_id = "95d3b58c-797f-482b-a851-d2e084290b4c"
+						}
+					}
+					{
+						_id = "e84dbb1f-a770-4449-abac-544e434f5609"
+						actual_target_ref = {
+							_id = "80e950b6-3a8e-4701-958b-6933f890a719"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "50ac9f31-6c42-48d9-b76f-ef6f50c843bb"
+							ref_filename = null
+							ref_id = "62c98448-8a22-481b-ad2e-4aceda412627"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "401fd3ea-a1a0-4f5e-9b6c-70a941155744"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "dac869dd-a14f-4742-9d35-dddf299755e5"
+							ref_filename = null
+							ref_id = "8fc5f677-697d-4ada-9e04-d0b8b7380a11"
+						}
+					}
 				]
 				weights = [
 					"1.0"
@@ -1914,6 +2496,482 @@ layers = [
 				width = 150
 				x = 20
 				y = 500
+			}
+			{
+				_id = "95d3b58c-797f-482b-a851-d2e084290b4c"
+				_name = "leftStrafeRun"
+				anim_blend_set_ref = {
+					_id = "b7412953-669e-461c-9a07-443d37699757"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "cc383b84-e5e6-4246-a3bb-228f6631b9d9"
+						ref_filename = "content/models/character/actionRoob/animations/left_strafe_inPlace.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "85523acb-9613-4a9c-bf13-936dec375f2e"
+					ref_filename = null
+					ref_id = "db180177-83c1-4839-a9b8-243e89a53fc5"
+				}
+				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transition_switch_entries = [
+				]
+				transition_switch_exits = [
+				]
+				transitions = [
+					{
+						_id = "7c1186eb-56f7-43ff-b1f0-072b8c6079df"
+						actual_target_ref = {
+							_id = "007c5191-9415-4216-bad3-2431202189e4"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "d9e87430-5887-4b25-949a-514e3a3e7117"
+							ref_filename = null
+							ref_id = "20ff1cdb-b1e5-4524-9649-2cb36e684b73"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "c5ed8cd7-743d-4297-adf7-e93ea95fea1c"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "a8aa157e-4fd5-488a-8462-497b26d8693b"
+							ref_filename = null
+							ref_id = "59b57414-b825-4926-a525-65c0243ac7f8"
+						}
+					}
+					{
+						_id = "627a6d94-0e00-40ec-b903-f6eac3706781"
+						actual_target_ref = {
+							_id = "998cb0f9-6774-49ee-a51e-a736ae6e0834"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "f54475ff-62fa-46f7-af11-e44456c50735"
+							ref_filename = null
+							ref_id = "46ff1e63-8a6d-4065-8fbe-9b674bbeaede"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "a8471f4c-756e-4cc3-9296-eadab0f30fbd"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "015e10cb-d3ca-4f26-b0bd-e29ed613af63"
+							ref_filename = null
+							ref_id = "980fa767-6006-4cae-abd4-e4cfdce291d5"
+						}
+					}
+					{
+						_id = "1cada259-4f2e-4b20-89a6-8ea44dd6f15f"
+						actual_target_ref = {
+							_id = "0a7cdfac-7380-470b-ac07-8e6bd0216fb7"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "915d288d-0e2f-46ea-bb79-ce936db96e48"
+							ref_filename = null
+							ref_id = "7c271be9-1a96-48a1-ace6-f14eb148d1a1"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "7a25d8d3-525a-4194-b9f8-e7060a4a076e"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "c9c59e02-c3d9-4fd7-b951-2d8953ca4eba"
+							ref_filename = null
+							ref_id = "6e128164-fab0-45ed-9390-92d482436dd7"
+						}
+					}
+					{
+						_id = "ee0e60e0-3972-4ce3-9109-bc72d5916077"
+						actual_target_ref = {
+							_id = "54919d93-a610-40a7-a500-d3de3d0fe310"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "e3494d14-730c-45e5-8f0a-660b423aaaeb"
+							ref_filename = null
+							ref_id = "fe4a361f-c553-48f7-8e94-a4e068075966"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "e0441e73-efea-453c-964c-68cad988afe9"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "0e05ee44-2615-415a-93e3-e892393a80b2"
+							ref_filename = null
+							ref_id = "64e038db-62ba-4562-8741-1eee838e12cd"
+						}
+					}
+					{
+						_id = "f2b1350f-b86a-4c95-bf70-2f1e43828d02"
+						actual_target_ref = {
+							_id = "cc9ff674-97bb-4a11-95e2-6fcf9069efed"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "57b761ad-6f2f-4a48-816f-251ed8287537"
+							ref_filename = null
+							ref_id = "88b9e101-b6ec-4593-a006-c0baf450bbc5"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "6f5eee0f-4f82-4ddf-807a-b973a2dc3223"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "e3490959-a5ad-4734-b5a9-efeb8e6ff249"
+							ref_filename = null
+							ref_id = "cd3af796-45bc-4a16-bd32-5a7a6655e953"
+						}
+					}
+					{
+						_id = "742f9031-45ea-4893-a458-a06010be7090"
+						actual_target_ref = {
+							_id = "8e962df6-6606-4ff8-a30f-95236af2dcde"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "e92e8947-94b5-44d9-b48e-4ba17a7ce3ae"
+							ref_filename = null
+							ref_id = "92943071-490e-401d-a8f5-756f54169ca2"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "09827a22-54a2-4529-a026-7438ffcf16e0"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "ce6980f9-e8dc-4ecf-a4a1-ecefc3cbc16a"
+							ref_filename = null
+							ref_id = "e66b8875-c9f5-4727-88f6-482fb06fd96f"
+						}
+					}
+					{
+						_id = "6bd30978-6631-4ec6-a994-f29195a58957"
+						actual_target_ref = {
+							_id = "5d2613f9-dca6-4e62-9acc-d6c8f9a1e9db"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "9292dc96-1fac-4dcb-a9d3-3c750153c38a"
+							ref_filename = null
+							ref_id = "62c98448-8a22-481b-ad2e-4aceda412627"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "764f773c-983b-40f1-b8f3-f93262e3f9a6"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "5c52ebce-161c-4803-9e55-480a5420caea"
+							ref_filename = null
+							ref_id = "8fc5f677-697d-4ada-9e04-d0b8b7380a11"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = -440
+				y = 860
+			}
+			{
+				_id = "8fc5f677-697d-4ada-9e04-d0b8b7380a11"
+				_name = "rightStrafeRun"
+				anim_blend_set_ref = {
+					_id = "48eddeb7-ae2c-4fd2-baa4-016f89d5368c"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "2e5e39e2-8e89-412a-af04-64c3da297a35"
+						ref_filename = "content/models/character/actionRoob/animations/right_strafe_inPlace.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "0580340d-f9ab-4ec7-bdf7-6526e66f28af"
+					ref_filename = null
+					ref_id = "db180177-83c1-4839-a9b8-243e89a53fc5"
+				}
+				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transition_switch_entries = [
+				]
+				transition_switch_exits = [
+				]
+				transitions = [
+					{
+						_id = "fd6e7c41-2808-4f91-a6c8-fa16b4d0c76d"
+						actual_target_ref = {
+							_id = "1ed61c6e-2043-4d0e-8913-0b82e4f34679"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "3623826a-769a-4081-81c2-215b3f67b70b"
+							ref_filename = null
+							ref_id = "92943071-490e-401d-a8f5-756f54169ca2"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "74eb9426-e387-495a-85bc-2efa16078123"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "c7d97be9-b0f9-4182-86de-106142c19e79"
+							ref_filename = null
+							ref_id = "e66b8875-c9f5-4727-88f6-482fb06fd96f"
+						}
+					}
+					{
+						_id = "c95c62a4-27e1-4d05-b8d8-0bbc4a9582f2"
+						actual_target_ref = {
+							_id = "f8ea42fc-8f72-4f1e-9a0c-29377b1357a1"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "0e86552f-b36b-4524-a536-f7dffcf8f3f8"
+							ref_filename = null
+							ref_id = "a1ca07fe-3c23-4771-ae87-0d6d1e620a19"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "0943a35d-5c9a-4458-8add-197db348297f"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "dfd271c4-b410-4036-809f-4e1829826010"
+							ref_filename = null
+							ref_id = "95d3b58c-797f-482b-a851-d2e084290b4c"
+						}
+					}
+					{
+						_id = "35412cf5-9be8-4e51-89ea-efde4f2d34bf"
+						actual_target_ref = {
+							_id = "e38f02bc-1283-46ae-b2c7-c1a5f755d11c"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "055d2080-1f32-48df-8470-efe65ff990c9"
+							ref_filename = null
+							ref_id = "46ff1e63-8a6d-4065-8fbe-9b674bbeaede"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "23012188-38db-48e1-aeb1-992fb1411233"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "2ec0786c-c946-4eee-8423-e1cdae350103"
+							ref_filename = null
+							ref_id = "980fa767-6006-4cae-abd4-e4cfdce291d5"
+						}
+					}
+					{
+						_id = "252e08b4-e964-4990-9d8d-47923a21dc7e"
+						actual_target_ref = {
+							_id = "d0da4ec2-0d24-4b04-b477-8352453bd011"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "ba3eef24-7f54-416b-81d1-6a73429c8fd6"
+							ref_filename = null
+							ref_id = "88b9e101-b6ec-4593-a006-c0baf450bbc5"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "48938497-292c-4dc7-b72e-d4e0d399d0af"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "8da74936-5b17-4c88-9ed2-1f7f49276107"
+							ref_filename = null
+							ref_id = "cd3af796-45bc-4a16-bd32-5a7a6655e953"
+						}
+					}
+					{
+						_id = "c02b9756-73d5-45d5-89c6-931562dc5161"
+						actual_target_ref = {
+							_id = "e1480581-35e8-41d6-b5a8-42963790839a"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "f74d3439-85ac-4260-9990-c7419abab08c"
+							ref_filename = null
+							ref_id = "20ff1cdb-b1e5-4524-9649-2cb36e684b73"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "cde77b78-6496-456a-872a-fac3c6f17cb6"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "cc61675b-4435-42b7-a923-b71dcd711bb2"
+							ref_filename = null
+							ref_id = "59b57414-b825-4926-a525-65c0243ac7f8"
+						}
+					}
+					{
+						_id = "c6f99854-613f-47c7-b745-cf06f8ffb77f"
+						actual_target_ref = {
+							_id = "ebad67cc-55d1-47f5-a11a-b249eb3a8a7d"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "3d98990e-cd59-40fd-8518-5f2b938a89ae"
+							ref_filename = null
+							ref_id = "7c271be9-1a96-48a1-ace6-f14eb148d1a1"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "1c849ab0-95de-4a9f-9820-dd5fa799ddf9"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "6244c600-992a-4eee-8d58-107dfc956ea1"
+							ref_filename = null
+							ref_id = "6e128164-fab0-45ed-9390-92d482436dd7"
+						}
+					}
+					{
+						_id = "694870f1-bf21-4272-b462-db14cd297c4c"
+						actual_target_ref = {
+							_id = "d0ba53d7-df99-4a22-acb4-439f0146d97d"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "de5a5d5a-9b7b-4df9-80c1-00b9cc45e453"
+							ref_filename = null
+							ref_id = "fe4a361f-c553-48f7-8e94-a4e068075966"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "22600441-a538-4673-95be-08a34e873430"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "9b9fa20b-efac-4df7-a2e8-1e2c6bbd4ccc"
+							ref_filename = null
+							ref_id = "64e038db-62ba-4562-8741-1eee838e12cd"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 540
+				y = 860
 			}
 		]
 		time_states = [

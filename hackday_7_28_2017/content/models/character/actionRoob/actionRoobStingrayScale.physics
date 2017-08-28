@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "unamed"
+		node = "unamed"
+		shapes = [
+			{
+				material = "default"
+				shape = "unamed"
+				template = "default"
+				type = "capsule"
+			}
+		]
+		template = "keyframed"
+	}
+]

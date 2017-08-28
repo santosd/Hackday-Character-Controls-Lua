@@ -1,4 +1,31 @@
 
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 8.15820214937551
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			1.21610236167908
+			7.43092632293701
+			4.91667938232422
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.0117433043196797
+			-0.206894189119339
+			0.976720809936523
+			0.055438470095396
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
 materials = {
 	default = "content/models/character/actionRoob/default"
 }
@@ -7,7 +34,6 @@ renderables = {
 		always_keep = false
 		culling = "bounding_volume"
 		generate_uv_unwrap = false
-		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false

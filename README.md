@@ -47,3 +47,16 @@ This was the initial start date of this project. I learned quite a few things:
 
 ## Friday August 25th 2017
 
+* This week I started on the camera follow. At this point the camera translates with the character but it is always facing the same direction. Eventually I would like for the camera to be able to rotate around the character using the mouse.
+
+* I also added character translation. This was done by creating position variables for `x,y,z` then I used those in the `Vector3()` and updated them based off of there current location and the key that is being pressed:
+```lua
+    actionRoobControls.pos_x = 0
+    actionRoobControls.pos_y = 0
+    actionRoobControls.pos_z = 0
+```
+* For instance on the camera I used the following to update it's position.
+
+```lua
+actionRoobControls.ar_cam_offset = stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y -7,actionRoobControls.pos_z +6)
+```
