@@ -1,21 +1,4 @@
 
-actors = [
-	{
-		enabled = true
-		mass = 0
-		name = "ar_actor"
-		node = "StingrayEntityRoot"
-		shapes = [
-			{
-				material = "default"
-				shape = "unamed"
-				template = "default"
-				type = "capsule"
-			}
-		]
-		template = "keyframed"
-	}
-]
 movers = [
 	{
 		collision_filter = "default"

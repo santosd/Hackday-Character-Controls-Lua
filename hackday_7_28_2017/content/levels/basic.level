@@ -248,8 +248,8 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Set Active Camera"
 				NodeLocation = {
-					X = 320
-					Y = -1000
+					X = 300
+					Y = -1040
 				}
 				OutEvents = [
 					"Out"
@@ -271,7 +271,7 @@ editor_metadata = {
 				]
 				NodeLocation = {
 					X = 20
-					Y = -1040
+					Y = -1060
 				}
 				OutEvents = [
 				]

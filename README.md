@@ -69,3 +69,14 @@ The following is a gif showing the controls at work:
 Right now I am able to get the character to walk, walk left, walk right, walk backwards. Using shift plus the w,a,s,d keys he can run in those directions as well.
 
 Initially I did not intend on having the character collide with anything, but have decided "why not!?" so that is the next thing I will look into doing. At some point I would also like to bring in the textures for the character. I would also like to add a funny animation such as a dance or something that is triggered when the character has been idle for a certain amount of time.
+
+## Friday September 8th 2017
+
+* This week I worked on getting collisions to work on the character and also figured out how to get the character to walk at an angle.
+
+* I ran into a few issues regarding the collssions.
+    * First I wasn't certain if I needed to have an actor or not. I came to find that having a mover was all I needed. I created a mover `stingray.Mover` and then I was able to move it using `stingray.Mover.move()`. Initially I tried using `stingray.Mover.set_position()` However, this simply spawns the mover to the specified location, therefore collisions do not work.
+    * At this point I am able to tell that the Mover is colliding because I am printing it's position with the `W` key and at a certain point it doesn't move past.
+    * The mover is currently not moving the character. I thought that this would automatically happen with the mover being attached to the character, but I haven't figured that out. There is a function for setting a mover to a unit `stingray.Unit.set_mover` but I may need to assign on update (I haven't tried this so I am not sure). My other guess is that I need to use the `stingray.Unit.set_moving`. I will be playing with that a little bit more to see if I can get it to work.
+
+* I was able to get the rotation on the character by using the `stingray.Unit.set_axis`
