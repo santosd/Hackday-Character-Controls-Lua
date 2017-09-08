@@ -3,8 +3,8 @@ actors = [
 	{
 		enabled = true
 		mass = 0
-		name = "unamed"
-		node = "unamed"
+		name = "ar_actor"
+		node = "StingrayEntityRoot"
 		shapes = [
 			{
 				material = "default"
@@ -14,5 +14,14 @@ actors = [
 			}
 		]
 		template = "keyframed"
+	}
+]
+movers = [
+	{
+		collision_filter = "default"
+		height = 4
+		name = "default"
+		radius = 1
+		slope_limit = 0.785398163397449
 	}
 ]

@@ -62,6 +62,10 @@ actionRoobControls.ar_cam_offset = stingray.Vector3(actionRoobControls.pos_x,act
 ```
 The following is a gif showing the controls at work:
 
-![alt text][logo]
+![running controls gif][logo]
 
 [logo]: https://github.com/santosd/Hackday-Character-Controls-Lua/blob/master/images/gifs/LUA_animControllerHackday01.gif "Logo Title Text 2"
+
+Right now I am able to get the character to walk, walk left, walk right, walk backwards. Using shift plus the w,a,s,d keys he can run in those directions as well.
+
+Initially I did not intend on having the character collide with anything, but have decided "why not!?" so that is the next thing I will look into doing. At some point I would also like to bring in the textures for the character. I would also like to add a funny animation such as a dance or something that is triggered when the character has been idle for a certain amount of time.
