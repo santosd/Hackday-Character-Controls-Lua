@@ -79,4 +79,6 @@ Initially I did not intend on having the character collide with anything, but ha
     * At this point I am able to tell that the Mover is colliding because I am printing it's position with the `W` key and at a certain point it doesn't move past.
     * The mover is currently not moving the character. I thought that this would automatically happen with the mover being attached to the character, but I haven't figured that out. There is a function for setting a mover to a unit `stingray.Unit.set_mover` but I may need to assign on update (I haven't tried this so I am not sure). My other guess is that I need to use the `stingray.Unit.set_moving`. I will be playing with that a little bit more to see if I can get it to work.
 
-* I was able to get the rotation on the character by using the `stingray.Unit.set_axis`
+* I was able to get the rotation on the character by using the `stingray.Unit.set_axis` this was a way to avoid using quaternion as it automatically converts to a quaternion for you.
+
+I feel that I am about half way through when it comes to getting the collisions to work. At this point I know that the collisions are working with the mover, I just need the mover to move my unit.
