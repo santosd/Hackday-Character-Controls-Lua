@@ -81,4 +81,4 @@ Initially I did not intend on having the character collide with anything, but ha
 
 * I was able to get the rotation on the character by using the `stingray.Unit.set_axis` this was a way to avoid using quaternion as it automatically converts to a quaternion for you.
 
-I feel that I am about half way through when it comes to getting the collisions to work. At this point I know that the collisions are working with the mover, I just need the mover to move my unit.
+I feel that I am about half way through when it comes to getting the collisions to work. At this point I know that the collisions are working with the mover, I just need the mover to move my unit. Until next hackday...
