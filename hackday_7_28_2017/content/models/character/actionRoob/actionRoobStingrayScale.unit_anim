@@ -8,7 +8,7 @@ anim_controller_ref = {
 	ref_id = null
 }
 anim_skeleton_ref = {
-	_id = "4487fa9d-17cf-44df-a5a7-7c51fd116603"
+	_id = "9ae276bd-e928-48e1-9321-ea06cda7b169"
 	ref_filename = "content/models/character/actionRoob/actionRoobStingrayScale.anim_skeleton"
 	ref_id = null
 }
