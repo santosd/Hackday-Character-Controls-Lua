@@ -82,3 +82,20 @@ Initially I did not intend on having the character collide with anything, but ha
 * I was able to get the rotation on the character by using the `stingray.Unit.set_axis` this was a way to avoid using quaternion as it automatically converts to a quaternion for you.
 
 I feel that I am about half way through when it comes to getting the collisions to work. At this point I know that the collisions are working with the mover, I just need the mover to move my unit. Until next hackday...
+
+## In Between Hackday
+
+* I have been doing some extra work on this at home.
+    * I have figured out the movement of the character unit. Basically I captured the value of the position of the mover in a variable and I am assigning those values to the camera with an offset and to the character unit:
+
+```lua
+    actionRoobControls.ar_mover_position = stingray.Mover.position(actionRoobControls.ar_mover)
+    actionRoobControls.pos_x = actionRoobControls.ar_mover_position[1]
+    actionRoobControls.pos_y = actionRoobControls.ar_mover_position[2]
+    actionRoobControls.pos_z = actionRoobControls.ar_mover_position[3]
+```
+Then later I am using the value:
+
+```lua
+    stingray.Unit.set_local_position(actionRoobControls.ar_character,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
+```

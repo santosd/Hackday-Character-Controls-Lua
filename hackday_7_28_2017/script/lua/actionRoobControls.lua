@@ -20,9 +20,9 @@ function actionRoobControls.ar_spawn()
      print("mover pos " .. tostring(actionRoobControls.ar_mover_position[1]))
 
     -- Translate Variables
-    actionRoobControls.pos_x = actionRoobControls.ar_mover_position[1]
-    actionRoobControls.pos_y = actionRoobControls.ar_mover_position[2]
-    actionRoobControls.pos_z = actionRoobControls.ar_mover_position[3]
+    actionRoobControls.pos_x = 0
+    actionRoobControls.pos_y = 0
+    actionRoobControls.pos_z = 0
 
     -- get the camera unit
     actionRoobControls.ar_camera = stingray.World.unit_by_name(ar_world, "arCamera")
@@ -44,12 +44,7 @@ function actionRoobControls.ar_controls()
     -- walk
     if wIsPressed == 1 and shiftIsPressed == 0 and dIsPressed == 0  then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "walk")
-        actionRoobControls.pos_y = actionRoobControls.pos_y + 0.05
-        stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(0,0.05,0),0.01)
-        actionRoobControls.ar_mover_position = stingray.Mover.position(actionRoobControls.ar_mover)
-        print(actionRoobControls.ar_mover_position[1])
-        print(actionRoobControls.ar_mover_position[2])
-        print(actionRoobControls.ar_mover_position[3])
+        stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(0,0.1,0),0.01)
     
     -- right forward walk
     elseif wIsPressed == 1 and shiftIsPressed == 0 and dIsPressed == 1 then
@@ -58,9 +53,9 @@ function actionRoobControls.ar_controls()
         actionRoobControls.rot_x = -0.785
 
     -- run
-    elseif wIsPressed == 1 and shiftIsPressed == 1  then
+    elseif wIsPressed == 1 and shiftIsPressed == 1 and dIsPressed == 0  then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "run")
-        actionRoobControls.pos_y = actionRoobControls.pos_y + 0.1
+        stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(0,0.25,0),0.01)
 
     -- left strafe walk
     elseif aIsPressed == 1 and shiftIsPressed == 0 then
@@ -91,12 +86,15 @@ function actionRoobControls.ar_controls()
         stingray.Unit.animation_get_state(actionRoobControls.ar_character)
         -- stingray.Unit.animation_event(actionRoobControls.ar_character, "dance")
     end
+    --update the variables for the position of the mover
+    actionRoobControls.ar_mover_position = stingray.Mover.position(actionRoobControls.ar_mover)
+    actionRoobControls.pos_x = actionRoobControls.ar_mover_position[1]
+    actionRoobControls.pos_y = actionRoobControls.ar_mover_position[2]
+    actionRoobControls.pos_z = actionRoobControls.ar_mover_position[3]
     --update the position of the camera based on the location of the character.
-    -- stingray.Mover.set_position(actionRoobControls.ar_mover, stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
-    -- stingray.Unit.set_local_position(actionRoobControls.ar_character,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
-    -- local ar_mover_position_x = stingray.Mover.position(actionRoobControls.ar_mover[1])
-    -- stingray.Unit.set_local_position(actionRoobControls.ar_camera,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y -7,actionRoobControls.pos_z +6))
-    -- stingray.Actor.set_velocity(actionRoobControls.ar_actor,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
+    stingray.Unit.set_local_position(actionRoobControls.ar_character,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
+    stingray.Unit.set_local_position(actionRoobControls.ar_camera,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y -7,actionRoobControls.pos_z +6))
+
     local x_rot_quat = stingray.Quaternion.axis_angle( stingray.Vector3(0, 0, 1), actionRoobControls.rot_x )
     stingray.Unit.set_local_rotation(actionRoobControls.ar_character,1,x_rot_quat)
 
