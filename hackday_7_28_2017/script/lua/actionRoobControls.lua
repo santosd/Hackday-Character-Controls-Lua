@@ -45,11 +45,12 @@ function actionRoobControls.ar_controls()
     if wIsPressed == 1 and shiftIsPressed == 0 and dIsPressed == 0  then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "walk")
         stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(0,0.1,0),0.01)
+        actionRoobControls.rot_x = 0
     
     -- right forward walk
     elseif wIsPressed == 1 and shiftIsPressed == 0 and dIsPressed == 1 then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "walk")
-        actionRoobControls.pos_y = actionRoobControls.pos_y + 0.05
+        stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(0,0.1,0),0.01)
         actionRoobControls.rot_x = -0.785
 
     -- run
@@ -60,29 +61,35 @@ function actionRoobControls.ar_controls()
     -- left strafe walk
     elseif aIsPressed == 1 and shiftIsPressed == 0 then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "leftStrafeWalk")
-        actionRoobControls.pos_x = actionRoobControls.pos_x - 0.05
+        stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(-0.1,0,0),0.01)
+        actionRoobControls.rot_x = 0
 
     -- left strafe run
     elseif aIsPressed == 1 and shiftIsPressed == 1 then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "leftStrafeRun")
-        actionRoobControls.pos_x = actionRoobControls.pos_x - 0.1
+        stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(-0.25,0,0),0.01)
+        actionRoobControls.rot_x = 0
 
     -- right strafe walk
     elseif dIsPressed == 1 and shiftIsPressed == 0 then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "rightStrafeWalk")
-        actionRoobControls.pos_x = actionRoobControls.pos_x + 0.05
+        stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(0.1,0,0),0.01)
+        actionRoobControls.rot_x = 0
         
     -- right strafe run
     elseif dIsPressed == 1 and shiftIsPressed == 1 then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "rightStrafeRun")
-        actionRoobControls.pos_x = actionRoobControls.pos_x + 0.1
+        stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(0.25,0,0),0.01)
+        actionRoobControls.rot_x = 0
 
     -- backwards walk
     elseif sIsPressed == 1 and shiftIsPressed == 0 then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "backwardsWalk")
-        actionRoobControls.pos_y = actionRoobControls.pos_y - 0.05
+        stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(0,-0.1,0),0.01)
+        actionRoobControls.rot_x = 0
     else 
         stingray.Unit.animation_event(actionRoobControls.ar_character, "idle")
+        actionRoobControls.rot_x = 0
         stingray.Unit.animation_get_state(actionRoobControls.ar_character)
         -- stingray.Unit.animation_event(actionRoobControls.ar_character, "dance")
     end
