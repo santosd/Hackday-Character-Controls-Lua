@@ -99,3 +99,4 @@ Then later I am using the value:
 ```lua
     stingray.Unit.set_local_position(actionRoobControls.ar_character,1,stingray.Vector3(actionRoobControls.pos_x,actionRoobControls.pos_y,actionRoobControls.pos_z))
 ```
+* I got the backwards running to work. After setting up all of this motion that is mainly animation based meaning that the left run is simply a left run animation with the mover\unit translating in that direction not actually rotating to face that direction. I have seen other examples in wich the mover\unit are rotated to actually face that direction and the animation is actually only a foward walk\run. I am considering doing that to meet the needs of a different gaming experience.
