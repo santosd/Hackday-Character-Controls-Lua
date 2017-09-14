@@ -40,9 +40,14 @@ function actionRoobControls.ar_controls()
     local dIsPressed = stingray.Keyboard.button(d_key_id)
     local shift_key_id = stingray.Keyboard.button_id("left shift")
     local shiftIsPressed = stingray.Keyboard.button(shift_key_id)
+    local space_key_id = stingray.Keyboard.button_id("space")
+    local spaceIsPressed = stingray.Keyboard.button(space_key_id)
 -- if button is pressed play specific animation event and update the position of the character
+    if spaceIsPressed == 1 then
+        stingray.Unit.animation_event(actionRoobControls.ar_character, "jump")
+    
     -- walk
-    if wIsPressed == 1 and shiftIsPressed == 0 and dIsPressed == 0  then
+    elseif wIsPressed == 1 and shiftIsPressed == 0 and dIsPressed == 0  then
         stingray.Unit.animation_event(actionRoobControls.ar_character, "walk")
         stingray.Mover.move(actionRoobControls.ar_mover,stingray.Vector3(0,0.09,0),0.01)
         actionRoobControls.rot_x = 0
