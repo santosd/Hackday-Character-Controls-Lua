@@ -359,6 +359,14 @@ compiler_data = {
 							on_beat = ""
 							to = "backwardsRun"
 						}
+						{
+							blend_time = 0.2
+							event = "dance"
+							is_switch = false
+							mode = "direct"
+							on_beat = ""
+							to = "dance"
+						}
 					]
 					weights = [
 						"1.0"
@@ -854,6 +862,30 @@ compiler_data = {
 							mode = "direct"
 							on_beat = ""
 							to = "jump"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/character/actionRoob/animations/dance"
+					]
+					loop_animation = true
+					name = "dance"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "idle"
+							is_switch = false
+							mode = "beat-closest"
+							on_beat = ""
+							to = "idle"
 						}
 					]
 					weights = [
@@ -2020,6 +2052,33 @@ layers = [
 							_id = "992c1bb9-db3e-45d4-a1b4-cf97755bb1ed"
 							ref_filename = null
 							ref_id = "f2c51d35-16fc-44f4-9ef9-91ecab232990"
+						}
+					}
+					{
+						_id = "b350dbef-b500-493e-856b-117f3b01e835"
+						actual_target_ref = {
+							_id = "9a9c8fab-c393-4d1b-b3e0-8d4d2234625c"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "867af389-ddaa-4195-87c1-7f43c68e8f6b"
+							ref_filename = null
+							ref_id = "674d3875-a3b3-4608-8d48-49a0e84ebfac"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "e4ec9e9c-eb83-4786-a3dd-a2bd25b42bda"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "7d1fe97a-7cc0-4535-88c5-e6152029eca9"
+							ref_filename = null
+							ref_id = "7c35b03c-6e55-44dc-a995-7954cbb92e12"
 						}
 					}
 				]
@@ -3673,6 +3732,82 @@ layers = [
 				width = 150
 				x = 20
 				y = 760
+			}
+			{
+				_id = "7c35b03c-6e55-44dc-a995-7954cbb92e12"
+				_name = "dance"
+				anim_blend_set_ref = {
+					_id = "63874342-b63c-42cc-8f07-c6e3192dac05"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "a8ba0d96-87c8-4387-a3c3-55f9457fefe1"
+						ref_filename = "content/models/character/actionRoob/animations/dance.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "77331932-0fa5-460a-b080-ab39a078e569"
+					ref_filename = null
+					ref_id = "db180177-83c1-4839-a9b8-243e89a53fc5"
+				}
+				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transition_switch_entries = [
+				]
+				transition_switch_exits = [
+				]
+				transitions = [
+					{
+						_id = "cc23c4fc-7c06-47a0-b5b9-37c7deea85b9"
+						actual_target_ref = {
+							_id = "f883d85b-bda7-41f6-8a85-65deffa20b60"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "78ab1388-ce59-4178-a438-6f8676db54d7"
+							ref_filename = null
+							ref_id = "fe4a361f-c553-48f7-8e94-a4e068075966"
+						}
+						has_nested_from = false
+						mode = "beat-closest"
+						nested_from_ref = {
+							_id = "516e9930-f9b4-43bc-b39a-400bc50170a6"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "ad20748e-513e-4bcc-ae90-310459ad9902"
+							ref_filename = null
+							ref_id = "64e038db-62ba-4562-8741-1eee838e12cd"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 455
+				y = -283
 			}
 		]
 		time_states = [
