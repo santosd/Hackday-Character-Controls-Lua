@@ -29,7 +29,7 @@ function actionRoobControls.ar_spawn()
 end
 -- The following function is called on update.
 function actionRoobControls.ar_controls()
-    -- check to see if button is being pressed
+    -- check to see if keyboard button is being pressed
     local w_key_id = stingray.Keyboard.button_id("w")
     local wIsPressed = stingray.Keyboard.button(w_key_id)
     local a_key_id = stingray.Keyboard.button_id("a")
@@ -117,4 +117,14 @@ function actionRoobControls.ar_controls()
     local x_rot_quat = stingray.Quaternion.axis_angle( stingray.Vector3(0, 0, 1), actionRoobControls.rot_x )
     stingray.Unit.set_local_rotation(actionRoobControls.ar_character,1,x_rot_quat)
 
+end
+
+
+
+function actionRoobControls.ar_mover_is_colliding()
+    local moverIsCollidingDown = stingray.Mover.collides_down(actionRoobControls.ar_mover)
+    if moverIsCollidingDown == 1 then
+        print("mover is colliding down")
+    else print("not colliding down")
+    end
 end
