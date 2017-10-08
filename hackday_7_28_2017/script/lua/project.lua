@@ -54,8 +54,7 @@ end
 
 -- Optional function called by SimpleProject after world update (we will probably want to split to pre/post appkit calls)
 function Project.update(dt)
-    actionRoobControls.ar_controls()
-	actionRoobControls.ar_mover_is_colliding()
+    -- actionRoobControls.ar_controls()
 end
 
 -- Optional function called by SimpleProject *before* appkit/world render
