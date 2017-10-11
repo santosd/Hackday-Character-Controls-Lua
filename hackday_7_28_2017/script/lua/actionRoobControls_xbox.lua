@@ -2,6 +2,7 @@ actionRoobControls_xbox = actionRoobControls_xbox or {}
 
 pad1 = stingray.pad1
 
+-- get the world and create the character and the mover
 function actionRoobControls_xbox.ar_spawn()
     local ar_world = SimpleProject.world
     actionRoobControls_xbox.ar_character = stingray.World.spawn_unit(ar_world, "content/models/character/actionRoob/actionRoobStingrayScale", stingray.Vector3(0,0,0))
