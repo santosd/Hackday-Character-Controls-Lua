@@ -6,7 +6,7 @@
 Project = Project or {}
 
 require 'script/lua/flow_callbacks'
-require 'script/lua/actionRoobControls'
+require 'script/lua/actionRoobControls_xbox'
 
 Project.level_names = {
 	menu = "content/levels/main_menu",
@@ -45,7 +45,8 @@ function Project.on_level_load_pre_flow()
 	end
 	
 	--Using the actionRoobControls scrip passed this
-	actionRoobControls.ar_spawn()
+	-- actionRoobControls_keyboard.ar_spawn()
+	actionRoobControls_xbox.ar_spawn()
 	
 end
 
@@ -54,7 +55,8 @@ end
 
 -- Optional function called by SimpleProject after world update (we will probably want to split to pre/post appkit calls)
 function Project.update(dt)
-    -- actionRoobControls.ar_controls()
+	-- actionRoobControls_keyboard.ar_controls()
+	actionRoobControls_xbox.ar_controls()
 end
 
 -- Optional function called by SimpleProject *before* appkit/world render
